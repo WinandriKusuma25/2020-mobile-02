@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#F2F2F2"
+    >
+
 
     <ImageView
     android:id="@+id/bg"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="320dp"
     android:src="@drawable/red_rectangle"
     android:scaleType="fitXY"
     app:layout_constraintTop_toTopOf="parent"
@@ -36,6 +39,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
         android:textColor="#000"
+        android:fontFamily="@font/futura_pt_demibold"
     />
 
     <TextView
@@ -43,9 +47,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="at largerst Servies marketplace"
+        android:fontFamily="@font/futura_pt_demibold"
         app:layout_constraintTop_toBottomOf="@id/welcome"
         android:textColor="#000"
-        android:textSize="20dp"
+        android:textSize="19dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="30dp"
         />
@@ -56,10 +61,12 @@
         android:layout_height="wrap_content"
         android:text="Enter as a"
         app:layout_constraintTop_toBottomOf="@id/text2"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="30dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textStyle="bold"
         />
 
     <Button
@@ -70,11 +77,13 @@
         app:layout_constraintTop_toBottomOf="@id/enter"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginStart="30dp"
         android:text="User"
         android:textColor="#FFF"
         android:fontFamily="@font/futura_pt_demibold"
+        android:textAllCaps="false"
+        android:textSize="18dp"
         />
 
     <Button
@@ -88,6 +97,9 @@
         android:text="Service Provider"
         android:layout_marginTop="10dp"
         android:textColor="#C22A2A"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textAllCaps="false"
+        android:textSize="18dp"
         />
 
     <TextView
